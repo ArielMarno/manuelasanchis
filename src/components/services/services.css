@@ -1,0 +1,197 @@
+/*contenedor principal del componente*/
+.services{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 3rem 1rem;
+    background-image: url(src/assets/services.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+/*iconos con tecnologias*/
+.services .tech{
+    padding-top: 3rem;
+    align-self: flex-start;
+}
+
+/*contenedor de tarjetas con servicios*/
+.services-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/*tarjetas*/
+.services .card{
+    padding: 2rem;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    max-width: 400px;
+    height: 450px;
+    border-radius: 5px;
+    border-bottom: 1px solid var(--pink);
+    border-left: 1px solid var(--pink);
+    border-top: 1px solid var(--blue);
+    border-right: 1px solid var(--blue);
+}
+
+/*contenido de la tarjeta*/
+.services .card-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    color: var(--white);
+    padding-top: 1rem;
+}
+
+/*número*/
+.services .card-content h5{
+    font-family: var(--title);
+    font-size: clamp(1.2rem, 0.131rem + 1.6719vw, 2.2rem);
+    font-weight: 500;
+}
+
+/*titulo del servicio*/
+.services .card-content h3{
+    font-family: var(--sub);
+    font-size: clamp(1.5rem, -0.1034rem + 2.5078vw, 3rem);
+    font-weight: 350;
+}
+
+/*descripcion del servicio*/
+.services .card-content p{
+    font-family: var(--text);
+    font-size: clamp(1.2rem, 1.0931rem + 0.1672vw, 1.3rem);
+    font-weight: 300;
+}
+
+/*contendor de CTA*/
+.services .card-content .btn{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+    text-decoration: none; 
+    color: var(--white);
+}
+
+/*flecha*/
+.services .card-content .btn img{
+    width: 40px;
+    height: auto;
+    background: rgba(75, 72, 72, 0.5);
+    padding: 0.3rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+/*ajutes para diseño adaptable*/
+@media (max-width:1440px) and (min-width:1023px) {
+
+    .services .card{
+        max-height: 420px;
+    }
+    /*contenedor de tarjetas con servicios*/
+    .services-cards{
+        gap: 1.5rem;
+    }
+    /*tarjetas*/
+    .services .card{
+        padding: 1.5rem;
+    }
+
+    .services .card-content .btn{
+        margin-top: 1rem;
+    }
+
+    /*flecha*/
+    .services .card-content .btn img{
+        width: 30px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1023px){
+
+    .services{
+        gap: 5rem;
+    }
+
+    .services .card{
+        width: auto;
+        height: 430px;
+    }
+
+    .services-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*número*/
+    .services .card-content h5{
+        font-size: 2rem;
+    }
+
+    /*titulo del servicio*/
+    .services .card-content h3{
+        font-size: 2.5rem;
+    }
+
+    /*descripcion del servicio*/
+    .services .card-content p{
+        font-size: 1.3rem;
+    }
+
+    .services .card-content .btn{
+        margin-top: 0.5rem;
+        gap: 0.7rem;
+    }
+
+    /*flecha*/
+    .services .card-content .btn img{
+        padding: 0.2rem;
+        width: 30px;
+    }
+
+    .services .card-content .btn p{
+        font-weight: 450;
+    }
+}
+
+@media (max-width: 480px){
+
+    .services .card{
+        width: auto;
+        height: 400px;
+    }
+
+    /*número*/
+    .services .card-content h5{
+        font-size: 1.5rem;
+    }
+
+    /*titulo del servicio*/
+    .services .card-content h3{
+        font-size: 2rem;
+    }
+
+    /*descripcion del servicio*/
+    .services .card-content p{
+        font-size: 1.1rem;
+        max-width: 300px;
+    }
+}

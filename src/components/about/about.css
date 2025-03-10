@@ -1,0 +1,203 @@
+/*contenedor principal del componente*/
+.about{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+    padding-bottom: 0;
+    gap: 3rem;
+}
+
+/*contenedor de nombre e imagen*/
+.about-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.full-name{
+    display: none;
+}
+
+/*nombre*/
+.about-title h2{
+    font-family: var(--sub);
+    font-size: clamp(4rem, -0.2759rem + 6.6876vw, 8rem);
+    font-weight: 400;
+    color: var(--white);
+}
+
+/*contenedor de textos e iconos*/
+.about-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 5rem;
+    padding-top: 3rem;
+}
+
+
+.about-content h5{
+    font-family: var(--text);
+    font-size: clamp(1.3rem, 0.8724rem + 0.6688vw, 1.7rem);
+    font-weight: 300;
+    color: var(--white);
+    max-width: 530px;
+}
+
+/*megritas*/
+.about-content h5 span{
+    font-weight: 500;
+    font-style: italic;
+}
+
+/*contenedor texto e iconos a redes*/
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.about-me p{
+    font-family: var(--text);
+    font-size: clamp(1rem, 0.6793rem + 0.5016vw, 1.3rem);
+    font-weight: 400;
+    color: var(--white);
+    max-width: 640px;
+}
+
+.about-me .text-about-me{
+    font-style: italic;
+    font-weight: 450;
+}
+
+/*contenedor de iconos*/
+.about-me_socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*iconos redes sociales*/
+.about-me_socials img{
+    width: 45px;
+    height: 45px;
+    opacity: 0.9;
+}
+
+/*ajustes para diseño adaptabñe*/
+@media (max-width: 1440px){
+
+    .about-title img{
+        max-width: 250px;
+    }
+
+    /*contenedor de textos e iconos*/
+    .about-content{
+        padding: 0 3rem;
+    }
+
+
+    .about-content h5{
+        max-width: 350px;
+    }
+
+    .about-me p{
+        max-width: 500px;
+    }
+
+    /*iconos redes sociales*/
+    .about-me_socials img{
+        width: 40px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 1023px){
+
+    .about{
+        gap: 1rem;
+    }
+
+    .about-title{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    .about-title h2{
+        display: flex;
+        flex-direction: row;
+        font-size: clamp(2rem, 0.818rem + 4.9767vw, 4rem);
+    }
+    
+    .about-title .half-name{
+        display: none;
+    }
+
+    .full-name{
+        display: flex;
+    }
+
+    .about-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2.5rem;
+        padding: 3rem 1rem;
+    }
+
+    .about-content h5{
+        font-size: clamp(1.1rem, 0.9818rem + 0.4977vw, 1.3rem);
+        max-width: 600px;
+    }
+
+    .about-me{
+        align-items: center;
+    }
+
+    .about-me p{
+        max-width: 490px;
+    }
+
+    /*contenedor de iconos*/
+    .about-me_socials{
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    .about-content h5{
+        max-width: 400px;
+    }
+
+    .about-me p{
+        max-width: 500px;
+    }
+
+    .about-me p br{
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+
+    .about-content h5{
+        max-width: 280px;
+    }
+
+    .about-me p{
+        max-width: 95%;
+    }
+}

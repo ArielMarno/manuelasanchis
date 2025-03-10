@@ -1,0 +1,270 @@
+/*contenedor principal del componente*/
+.proyects{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+}
+
+/*contenedor del titulo y botón*/
+.proyects-title{
+    width: 1316px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*titulo*/
+.proyects-title h2{
+    font-family: var(--sub);
+    color: var(--white);
+    font-size: clamp(2rem, 0.931rem + 1.6719vw, 3rem);
+    font-weight: 500;
+}
+
+/*contenedor del botón*/
+.proyects-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    text-decoration: none;
+}
+
+/*flecha*/
+.proyects-btn img{
+    width: 40px;
+    height: auto;
+    background: rgba(75, 72, 72, 0.5);
+    padding: 0.3rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+/*texto*/
+.proyects-btn p{
+    font-family: var(--text);
+    font-size: clamp(1.2rem, 0.8793rem + 0.5016vw, 1.5rem);
+    color: var(--white);
+    font-weight: 400;
+}
+
+/*contenedor de proyectos*/
+.proyects-cards_container{
+    max-width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+/*tamaño de contenedores*/
+.proyect{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 650px;
+    height: 650px;
+}
+
+/*link al diseño*/
+.proyect a{
+    height: 50%;
+    align-self: center;
+}
+
+/*botón flecha*/
+.proyect img{
+    width: 50px;
+    height: auto;
+    background: rgba(75, 72, 72, 0.5);
+    padding: 0.3rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    transition: transform 0.5s ease;
+}
+
+.proyect img:hover{
+    transform: rotate(-50deg);
+}
+
+/*imagenes de fondo para cada proyecto*/
+
+.proyect:nth-child(1){
+    background-image: url(src/assets/proyects/AGROB-MK.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.proyect:nth-child(2){
+    background-image: url(src/assets/proyects/M44-MK.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.proyect:nth-child(3){
+    background-image: url(src/assets/proyects/COSTANORD-MK.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.proyect:nth-child(4){
+    background-image: url(src/assets/proyects/SF-MK.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*contenedor de nombre de cliente y trabajo realizado*/
+.proyect-content{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+}
+
+/*cliente*/
+.proyect-content h3{
+    font-family: var(--sub);
+    font-size: clamp(1.3rem, 1.0862rem + 0.3344vw, 1.5rem);
+    font-weight: 400;
+    color: var(--white);
+}
+
+/*trabajo realizado*/
+.proyect-content p {
+    font-family: var(--text);
+    font-size: clamp(1.1rem, 0.9931rem + 0.1672vw, 1.2rem);
+    font-weight: 400;
+    color: var(--white);
+}
+
+/*ajustes para diseño adaptable*/
+@media (max-width: 1440px){
+
+    /*contenedor del titulo y botón*/
+    .proyects-title{
+        width: 100%;
+    }
+
+    
+    /*flecha*/
+    .proyects-btn img{
+        width: 35px;
+        height: auto;
+    }
+
+    /*contenedor de proyectos*/
+    .proyects-cards_container{
+        max-width: 100%;
+        width: 100%;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    /*tamaño de contenedores*/
+    .proyect{
+        width: 100%;
+        height: 550px;
+    }
+}
+
+@media (max-width: 1023px){
+
+    /*contenedor del titulo y botón*/
+    .proyects-title{
+        width: 700px;
+    }
+
+    /*contenedor de proyectos*/
+    .proyects-cards_container{
+        max-width: 100%;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    /*tamaño de contenedores*/
+    .proyect{
+        width: 700px;
+        height: 700px;
+    }
+}
+
+@media (max-width: 768px){
+
+    /*contenedor del titulo y botón*/
+    .proyects-title{
+        width: 100%;
+    }
+
+    .proyects-title h2{
+        font-size: clamp(1.3rem, 0.6144rem + 2.8866vw, 2rem);
+    }
+
+    .proyects-btn{
+        gap: 0.5rem;
+    }
+
+    /*flecha*/
+    .proyects-btn img{
+        width: 30px;
+        height: auto;
+    }
+
+    .proyects-btn p{
+        font-size: clamp(1rem, 0.8041rem + 0.8247vw, 1.2rem);
+    }
+
+    /*tamaño de contenedores*/
+    .proyect{
+        width: 100%;
+        height: 550px;
+    }
+
+    /*contenedor de nombre de cliente y trabajo realizado*/
+    .proyect-content{
+        width: 100%;
+    }
+
+    /*cliente*/
+    .proyect-content h3{
+        font-size: clamp(1rem, 0.7062rem + 1.2371vw, 1.3rem);
+    }
+
+    /*trabajo realizado*/
+    .proyect-content p {
+        font-size: clamp(0.9rem, 0.7041rem + 0.8247vw, 1.1rem);
+    }
+}
+
+@media (max-width: 580px){
+
+    /*tamaño de contenedores*/
+    .proyect{
+        width: 100%;
+        height: 380px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .proyects-title h2{
+       max-width: 150px;
+    }
+
+}

@@ -1,0 +1,122 @@
+/*navegador*/
+nav{
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(45px);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+
+/*contenido del navegador*/
+.navbar-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/*nombre*/
+.navbar-content h2{
+    font-family: var(--sub);
+    font-size: clamp(1.3rem, 1.2525rem + 0.2vw, 1.5rem);
+    font-weight: 400;
+    color: var(--white);
+}
+
+/*contenedor de links*/
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: var(--text);
+    color: var(--white);
+    font-size: clamp(1rem, 0.9762rem + 0.1vw, 1.1rem);
+}
+
+/*link contacto para diseño responsive*/
+.rsp-contact, .burguer-menu{
+    display: none;
+}
+
+/*boton contacto*/
+.navbar-content .contact-btn{
+    font-family: var(--text);
+    font-size: clamp(1rem, 0.9525rem + 0.2vw, 1.2rem);
+    font-weight: 400;
+    text-decoration: none;
+    background: var(--pink);
+    color: var(--white);
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+}
+
+/*codigo para dispositivos mobiles*/
+@media (max-width: 768px){
+
+    nav{
+        position: fixed;
+        backdrop-filter: blur(5px);
+        background: rgb(0, 0, 0, 0.7);
+        top: 0;
+        height: 10vh;
+        width: 100%;
+        z-index: 999;
+    }
+    
+    .navbar-content{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .rsp-contact, .burguer-menu{
+        display: flex;
+    }
+
+    .contact-btn{
+        display: none;
+    }
+
+    .menu{
+        position: fixed;
+        transform: translateX(-100%); 
+        transition: transform 0.3s initial;
+        top: 0;
+        left: 0;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .menu.open {
+        z-index: 1000;
+        transform: translateX(0);
+        background: rgb(0, 0, 0, 0.7);
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        left: 0;
+        top: 10vh;
+      }
+      
+    .menu a{
+        color: var(--white);
+        font-size: 1.1rem;
+        font-weight: 400;
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+      }
+      
+}

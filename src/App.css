@@ -1,0 +1,43 @@
+:root {
+  /*variables para fuentes*/
+  --title: "Anta", serif;
+  --sub: "Oxanium", serif;
+  --text: "Poppins", serif;
+
+  /*variables para colores*/
+  --black: #010101;
+  --pink: #F77CEE;
+  --blue: #05C3E9;
+  --white: #fff;
+  --grey: #d4d4d4;
+  --gradient: linear-gradient(30deg, #05C3E9 6%, #F77CEE 80%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #010101;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#F77CEE), to(#05C3E9));
+  background-image: -webkit-linear-gradient(bottom, #F77CEE 0%, #05C3E9 100%);
+  background-image: linear-gradient(to top, #F77CEE 0%, #05C3E9 100%);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #242424;
+}

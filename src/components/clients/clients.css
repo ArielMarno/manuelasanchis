@@ -1,0 +1,178 @@
+/*contenedor principal del componente*/
+.clients{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 5rem;
+    padding: 5rem 3rem;
+    background-image: url(src/assets/clients.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+/*contenedor de titulo y subtitulo*/
+.clients-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--white);
+    text-align: center;
+}
+
+/*titulo*/
+.clients-title h2{
+    font-family: var(--sub);
+    font-size: clamp(3rem, 1.931rem + 1.6719vw, 4rem);
+    font-weight: 400;
+}
+
+/*subtitulo*/
+.clients-title p{
+    font-family: var(--text);
+    font-size: clamp(1.2rem, 0.8793rem + 0.5016vw, 1.5rem);
+    font-weight: 400;
+    max-width: 500px;
+}
+
+
+/*contenedor de tarjetas*/
+.clients-cards_container{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    align-items: flex-start;
+    justify-items: center;
+    gap: 1rem;
+}
+
+/*columnas contenedoras de tarjetas*/
+.clients-cards_container .col{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*tarjeta*/
+.client-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    color: var(--white);
+    width: 100%;
+    background: #181716;
+    border: 1px solid var(--grey);
+    max-width: 600px;
+    height: fit-content;
+    padding: 2.6rem;
+}
+
+/*servicio*/
+.client-card h4{
+    font-family: var(--sub);
+    font-size: clamp(1.7rem, 1.0586rem + 1.0031vw, 2.3rem);
+    font-weight: 450;
+}
+
+/*comentario del cliente*/
+.client-card p{
+    font-family: var(--text);
+    font-size: clamp(1rem, 0.7853rem + 0.3351vw, 1.2rem);
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*contenedor de imagen, nombre y empresa del cliente*/
+.client-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/*imagen*/
+.client-profile img{
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*cliente*/
+.name-company{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/*nombre*/
+.name-company h5{
+    font-family: var(--sub);
+    font-size: clamp(1.2rem, 0.8793rem + 0.5016vw, 1.5rem);
+    font-weight: 300;
+}
+
+/*empresa*/
+.name-company p{
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (max-width:1023px){
+
+    .clients{
+        padding: 5rem 1rem;
+    }
+
+    /*contenedor de tarjetas*/
+    .clients-cards_container{
+        grid-template-columns:  1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width:768px){
+
+    .clients-title h2{
+        font-size: clamp(2rem, 1.0206rem + 4.1237vw, 3rem);
+    }
+
+    .clients-title p{
+        font-size: clamp(1rem, 0.8041rem + 0.8247vw, 1.2rem);
+    }
+
+    /*tarjeta*/
+    .client-card{
+        padding: 1.5rem;
+    }
+    /*servicio*/
+    .client-card h4{    
+        font-size: 1.5rem;
+    }
+
+    /*imagen*/
+    .client-profile img{
+        width: 50px;
+        height: auto;
+    }
+
+    /*nombre*/
+    .name-company h5{
+        font-size: 1.2rem;
+    }
+
+    .name-company{
+        gap: 0;
+    }
+
+    /*empresa*/
+    .name-company p{
+       font-size: 0.9rem;
+    }
+}
