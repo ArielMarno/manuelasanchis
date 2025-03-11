@@ -14,11 +14,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-}
-
-.full-name{
-    display: none;
+    justify-content: center;
+    gap: 5rem;
 }
 
 /*nombre*/
@@ -27,6 +24,10 @@
     font-size: clamp(4rem, -0.2759rem + 6.6876vw, 8rem);
     font-weight: 400;
     color: var(--white);
+}
+
+.lastname-rsp{
+    display: none;
 }
 
 /*contenedor de textos e iconos*/
@@ -39,7 +40,6 @@
     padding: 0 5rem;
     padding-top: 3rem;
 }
-
 
 .about-content h5{
     font-family: var(--text);
@@ -137,15 +137,16 @@
     .about-title h2{
         display: flex;
         flex-direction: row;
+        gap: 1rem;
         font-size: clamp(2rem, 0.818rem + 4.9767vw, 4rem);
     }
-    
-    .about-title .half-name{
-        display: none;
+
+    .lastname-rsp{
+        display: flex;
     }
 
-    .full-name{
-        display: flex;
+    .about .about-title .lastname{
+        display: none;
     }
 
     .about-content{

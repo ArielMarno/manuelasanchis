@@ -13,11 +13,11 @@ const Footer = () => {
     <div className='footer' id='contacto'>
         <div className='footer-title'>
             <h5>TE GUSTARÍA QUE TRABAJEMOS JUNTOS?</h5>
-            <h2>Hagamos Que Tu <br />
-            Negocio <span>Se Destaque</span></h2>
+            <h2>Hagamos que tu <br />
+            negocio <span>destaque</span></h2>
             <p>Incrementa tu presencia, reputación y
             ventas en el mundo digital!</p>
-            <a href="#">CONTACTARSE <img src={arrow} alt="flecha"/></a>
+            <a href="https://wa.link/f1hfwe">CONTACTARSE <img src={arrow} alt="flecha"/></a>
         </div>
 
         <div className='footer-links'>

@@ -11,7 +11,7 @@ const Clients = () => {
   return (
     <div className='clients' id='clientes'>
         <div className='clients-title'>
-            <h2>Que Opinan <br /> Mis Clientes?</h2>
+            <h2>Qué opinan <br /> mis clientes?</h2>
             <p>Conoce lo que tienen para decir mis clientes sobre su experiencia trabajando conmigo y los objetivos que logramos concretar juntos.</p>
         </div>
         <div className='clients-cards_container'>

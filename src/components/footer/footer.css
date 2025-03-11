@@ -8,7 +8,7 @@
     justify-content: center;
     gap: 3rem;
     padding: 5rem 3rem;
-    background-image: url(src/assets/footer.webp);
+    background-image: url("/footer.webp");
     background-position: center;
     background-size: cover;
 }

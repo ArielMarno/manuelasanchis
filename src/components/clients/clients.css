@@ -7,7 +7,7 @@
     justify-items: center;
     gap: 5rem;
     padding: 5rem 3rem;
-    background-image: url(src/assets/clients.webp);
+    background-image: url("/clients.webp");
     background-position: center;
     background-size: cover;
 }

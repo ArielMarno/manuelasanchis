@@ -21,9 +21,9 @@ const Navbar = () => {
                 <a href="#tecnologias" onClick={handleLinkClick}>Tecnologías</a>
                 <a href="#proyectos" onClick={handleLinkClick}>Proyectos</a>
                 <a href="#sobremi" onClick={handleLinkClick}>Sobre Mi</a>
-                <a href="https://wa.me/message/TKNQWPNUUGLLJ1" className='rsp-contact' onClick={handleLinkClick}>Contacto</a>
+                <a href="https://wa.link/f1hfwe" className='rsp-contact' onClick={handleLinkClick}>Contacto</a>
             </div>
-            <a href='https://wa.me/message/TKNQWPNUUGLLJ1' className='contact-btn'>Contacto</a>
+            <a href='https://wa.link/f1hfwe' className='contact-btn'>Contacto</a>
             <div className='burguer-menu'>
                 <Menu toggleMenu={toggleMenu} isOpen={isOpen}/>
             </div>

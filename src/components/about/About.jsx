@@ -12,9 +12,9 @@ const About = () => {
   return (
     <div className='about' id='sobremi'>
         <div className='about-title'>
-            <h2><span className='full-name'>Manue</span>la Sanchis</h2>
+            <h2>Manuela <span className='lastname-rsp'>Sanchis</span></h2>
             <img src={eye} alt="ojo" />
-            <h2 className='half-name'>Manue</h2>
+            <h2 className='lastname'>Sanchis</h2>
         </div>
         <div className='about-content'>
             <h5>Soy quien estabas buscando para <span>incrementar tu presencia, reputación y ventas en el mundo digital!</span></h5>

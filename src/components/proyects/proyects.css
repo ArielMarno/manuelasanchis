@@ -100,25 +100,25 @@
 /*imagenes de fondo para cada proyecto*/
 
 .proyect:nth-child(1){
-    background-image: url(src/assets/proyects/AGROB-MK.webp);
+    background-image: url("/proyects/AGROB-MK.webp");
     background-position: center;
     background-size: cover;
 }
 
 .proyect:nth-child(2){
-    background-image: url(src/assets/proyects/M44-MK.webp);
+    background-image: url("/proyects/M44-MK.webp");
     background-position: center;
     background-size: cover;
 }
 
 .proyect:nth-child(3){
-    background-image: url(src/assets/proyects/COSTANORD-MK.webp);
+    background-image: url("/proyects/COSTANORD-MK.webp");
     background-position: center;
     background-size: cover;
 }
 
 .proyect:nth-child(4){
-    background-image: url(src/assets/proyects/SF-MK.webp);
+    background-image: url("/proyects/SF-MK.webp");
     background-position: center;
     background-size: cover;
 }

@@ -11,7 +11,7 @@ const Services = () => {
             <div className='card-content'>
               <h5>01</h5>
               <h3>Diseño Grafico</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+              <p> Creación visual atractiva y estratégica para fortalecer tu marca.</p>
               <a href='https://wa.link/isrbgk' className='btn'>
                 <img src={arrow} alt="flecha" />
                 <p>Solicitar Servicio</p>
@@ -22,7 +22,7 @@ const Services = () => {
             <div className='card-content'>
               <h5>02</h5>
               <h3>Diseño Web</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+              <p> Sitios web modernos, funcionales y optimizados para generar resultados.</p>
               <a href='https://wa.link/kqm1o3' className='btn'>
                 <img src={arrow} alt="flecha" />
                 <p>Solicitar Servicio</p>
@@ -33,7 +33,7 @@ const Services = () => {
             <div className='card-content'>
               <h5>03</h5>
               <h3>Social Media</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+              <p> Gestión y contenido estratégico para crecer y conectar con tu audiencia.</p>
               <a href='https://wa.link/952pfn' className='btn'>
                 <img src={arrow} alt="flecha" />
                 <p>Solicitar Servicio</p>
